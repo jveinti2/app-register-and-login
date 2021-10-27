@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login cx</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/mainLogin.css">
+</head>
+<body>
+
+    <div class="login">
+        <div class="form-container">
+            <img class="logo" src="/drassager/src/assests/drassager.png" alt="logo">
+
+            <form action="/auth" method="POST" class="form" >
+                <p>Usuario</p>
+                <input type="text" name="user" required>
+                <p>Contraseña</p>
+                <input type="password" name="pass" required>
+
+                <div class="helps">
+                    <span class="help-block">
+                        <input type="checkbox">
+                        <p>Recuérdame</p>
+                    </span>
+                    <a href="/">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <div class="btns">
+                    <input class="btn-login"type="submit" value="Iniciar Sesión"></input>
+                    <a href="/">Crear una cuenta</a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
