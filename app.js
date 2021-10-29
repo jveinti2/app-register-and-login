@@ -28,14 +28,26 @@ app.use(session({
 require('./database/db');
 
 //Rutas
+    //home
     app.get('/', (req, res) => {
         res.render('index');
     })
-
-    app.get('/login', (req, res) => {
-        res.render('login');
+    //login programadora Cx
+    app.get('/loginCx', (req, res) => {
+        res.render('loginCx');
     })
 
+    //login Vigilancia epidemiologica
+    app.get('/loginVig', (req, res) => {
+        res.render('loginVig');
+    })
+
+    //login Central esterilización
+    app.get('/loginCen', (req, res) => {
+        res.render('loginCen');
+    })
+
+    //Register
     app.get('/register', (req, res) => {
         res.render('register');
     })
@@ -71,19 +83,36 @@ app.post('/register', async (req, res) => {
 app.post('/auth', async (req, res) => {
     const user = req.body.user;
     const pass = req.body.pass;
-    let passwordHaash = await bcryptjs.hash(pass, 8);
+    let passwordHash = await bcryptjs.hash(pass, 8);
     if(user && pass){
-        connection.query('SELECT * FROM users WHERE user = ?', [user], async (error, results)=>{
+        connection.query('SELECT * FROM user WHERE user = ?', [user], async (error, results)=>{
             if(results.length == 0 || !(await bcryptjs.compare(pass, results[0].pass))){
-                res.send('User y/o Pass incorrecto');
+                res.render('login',{
+                    alert: true,
+                    alertTitle: "Error",
+                    alertMessage: "Usuario y/o password incorrecto",
+                    alertIcon: 'error',
+                    showConfirmButton: true,
+                    timer:false,
+                    ruta:'login'
+                });
             }else{
-                res.send('Bienvenido');
+                req.session.name = results[0].name
+                res.render('login',{
+                    alert: true,
+                    alertTitle: "Bienvenido",
+                    alertMessage: "login correcto",
+                    alertIcon: 'success',
+                    showConfirmButton: false,
+                    timer:1500,
+                    ruta:''
+                });
             }
         })
     }
-
 })
 
+    //listen
 app.listen(3000, (req, res) => {
     console.log('Servidor ejecutandose in http://localhost:3000');
 });

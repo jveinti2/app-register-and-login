@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/drassager/pagina-login/assests/fondos/cx.jpeg);
+    background-image: url(../assets/assests_global/cx.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
 }

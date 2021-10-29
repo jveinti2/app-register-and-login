@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login cx</title>
+    <title>login Vig</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resources/css/mainRegister.css">
+    <link rel="stylesheet" href="resources/css/mainLoginVig.css">
 </head>
 <body>
 
     <div class="login">
         <div class="form-container">
-            <img class="logo" src="/drassager/src/assests/drassager.png" alt="logo">
+            <img class="logo" src="../resources/assets/assests_global/drassager.png" alt="logo">
 
-            <form action="/register" method="POST" class="form" >
+            <form action="/auth" method="POST" class="form" >
                 <label for="user" class="">User</label>
                 <input type="text" name="user" required>
-
-                <label for="name">Full Name</label>
-                <input type="text" name="name" required>
-
                 <label for="pass">Password</label>
                 <input type="password" name="pass" required>
 
-                <label for="rol">Rol</label>
-                <select name="rol" id="rol">
-                    <option value="CX">CX</option>
-                    <option value="Lab">Lab</option>
-                    <option value="Inst">Inst</option>
-
-                </select>
-
+                <div class="helps">
+                    <span class="help-block">
+                        <input type="checkbox">
+                        <p>Recuérdame</p>
+                    </span>
+                    <a href="/">¿Olvidaste tu contraseña?</a>
+                </div>
 
                 <div class="btns">
-                    <input class="btn-login"type="submit" value="Crear"></input>
+                    <input class="btn-login"type="submit" value="Iniciar Sesión"></input>
+                    <a href="/">Crear una cuenta</a>
                 </div>
 
             </form>
