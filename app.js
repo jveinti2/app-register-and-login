@@ -79,7 +79,6 @@ app.post('/register', async (req, res) => {
     }) 
 })
     //Auth
-
 app.post('/auth', async (req, res) => {
     const user = req.body.user;
     const pass = req.body.pass;
@@ -87,18 +86,18 @@ app.post('/auth', async (req, res) => {
     if(user && pass){
         connection.query('SELECT * FROM user WHERE user = ?', [user], async (error, results)=>{
             if(results.length == 0 || !(await bcryptjs.compare(pass, results[0].pass))){
-                res.render('login',{
+                res.render('loginCx',{
                     alert: true,
                     alertTitle: "Error",
                     alertMessage: "Usuario y/o password incorrecto",
                     alertIcon: 'error',
                     showConfirmButton: true,
                     timer:false,
-                    ruta:'login'
+                    ruta:'loginCx'
                 });
             }else{
                 req.session.name = results[0].name
-                res.render('login',{
+                res.render('loginCx',{
                     alert: true,
                     alertTitle: "Bienvenido",
                     alertMessage: "login correcto",
