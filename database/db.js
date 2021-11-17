@@ -13,4 +13,5 @@ connection.connect((error)=>{
     }
     console.log('conectado a la BD');
 });
+
 module.exports = connection;
