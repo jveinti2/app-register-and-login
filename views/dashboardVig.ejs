@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/vig.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="container_list">
+        <a href="/">
+            <img class="logo-drassager" src="resources/assets/assests_global/drassager-blanco.png" alt=""  >
+        </a>
+        <ul class"list_opt">
+            <li> <img class="img-pequeña" src="resources/assets/portales/portal-vigilancia/assets/virus.svg" alt="img"> <a href="#infecciones">Infecciones</a> </li>
+            <li> <img class="img-pequeña" src="resources/assets/portales/portal-vigilancia/assets/aislamiento.svg" alt="img"> <a href="#aislamiento">Aislamiento</a> </li>  </li>
+            <li> <img src="resources/assets/portales/portal-vigilancia/assets/informe.svg" alt="img"> <a href="#informe">Crear informe</a>  </li>
+               <hr>
+            <li> <img src="resources/assets/portales/portal-cx/assets/ajuste.svg" alt="img"> <a href="">Ajustes</a>  </li>
+            <li> <img src="resources/assets/portales/portal-cx/assets/cerrar-sesión.svg" alt="img"> <a href="">Cerrar sesión</a>  </li>
+        </ul>
+    </div>
+
+    <!-- infecciones -->
+    <div id="infecciones">
+        <div class="modulo modulo_infecciones">
+            <div class="container_modulo">
+                <h2>Detalles Infecciones</h2>
+                <div class="modulo-content-infecciones">
+                    <button>Tipos</button>
+                    <button>Tipo germen</button>
+                    <button>Resistencia antibiotica</button>
+                    <hr>
+                </div>
+                <div class="container-formulario-infecciones">
+                    <div class="formulario-left">
+                        <div>
+                            ID paciente <input type="text">
+                        </div>
+                    </div>
+                    <div class="formulario-right">
+                        <div>
+                            ID observacion <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-infecciones-img">
+                    <img src="resources/assets/portales/portal-vigilancia/assets/img-infecciones-tabla.png" alt="imagen infecciones">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aislamiento -->
+    <div id="aislamiento">
+        <div class="modulo modulo_aislamiento">
+            <div class="container_modulo">
+                <h2>Detalles Aislamiento</h2>
+                <hr>
+                <div class="container-formulario-aislamiento">
+                    <div class="formulario-left">
+                        <div>
+                            ID paciente <input type="text">
+                        </div>
+                    </div>
+                    <div class="formulario-right">
+                        <div>
+                            ID observacion <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-aislamiento-img">
+                    <img src="resources/assets/portales/portal-vigilancia/assets/img-aislamiento-formulario.png" alt="imagen infecciones">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Informe -->
+    
+    <div id="informe">
+        <div class="modulo modulo_informe">
+            <div class="container_modulo">
+                <h2>Crear Informe</h2>
+                <hr>
+                <div class="container-formulario-informe">
+                    <div>
+                        <div>
+                            Código informe <input type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Fecha de realización <input type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Categoria informe <select>
+                                <option >-seleccionar-</option>
+                                <option >Aislamiento</option>
+                                <option >Infecciones</option>
+                                <option >Indicadores</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="container-informe-contenido">
+                            Contenido <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-informe-btns">
+                    <button>Generar informe</button>
+                    <button>Guardar</button>
+                    <button>Cancelar</button>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Margenes globales */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #6295e0;
+}
+
+
+/* Logo */
+.logo-drassager {
+    margin: 10px;
+    width: 200px;
+}
+/* Estilos sidebar */
+.container_list {
+    z-index: 1;
+    position: fixed;
+    width: 300px;
+}
+.list_opt {
+    padding: 0 20px;
+}
+ul li {
+    padding: 22px 10px;
+    list-style: none;
+    font-size: 16px;
+    border-radius: 20px;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+li img {
+    width: 20px;
+    filter: invert(100%);
+}
+.img-pequeña{
+    width: 25px;
+}
+
+/* Modulos infecciones */
+.modulo{
+    margin-top: 20px;
+    margin-left: 300px;
+    height: 100vh;
+}
+.container_modulo{
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: #ebf2f8;
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+}
+.modulo-content-infecciones{
+    margin: 20px 0;
+}
+.container-formulario-infecciones{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.formulario-left{
+    grid-column: 1;
+}
+.formulario-right{
+    grid-column: 2;
+}
+.container-infecciones-img img{
+    width: 100%;
+}
+
+/* Modulo aislamiento */
+.container-formulario-aislamiento{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.container-aislamiento-img{
+    text-align: center;
+}
+.container-aislamiento-img img{
+    width: 60%;
+}
+.container-formulario-informe{
+    padding-top: 60px;
+    padding-left: 60px;
+    color: #8eb3e7;
+    font-size: 20px;
+    weight: bold;
+}
+
+.container-formulario-informe div{
+    margin: 20px 5px;
+}
+.container-informe-contenido input{
+    width: 70%;
+    height: 250px;
+}
+.container-informe-btns{
+    text-align: center;
+}
+.container-informe-btns button{
+    margin: 3px 10px;
+    font-size: 20px;
+    padding: 5px 8px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #6295e0;
+    cursor: pointer;
+}

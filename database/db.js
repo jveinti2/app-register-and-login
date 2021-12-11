@@ -1,3 +1,4 @@
+//Metodo para la conexión con la BD
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -6,6 +7,7 @@ const connection = mysql.createConnection({
     database: process.env.DB_DATABASE
 });
 
+//Manejador de errores
 connection.connect((error)=>{
     if(error){
         console.log('El error es :' + error);

@@ -42,6 +42,12 @@ require('./database/db');
     app.get('/dashboardCx', (req, res) => {
         res.render('dashboardCx')
     })
+    //Dashboard VigilanciaEp
+    app.get('/dashboardVig', (req, res) => {
+        res.render('dashboardVig')
+    })
+
+
     //login Vigilancia epidemiologica
     app.get('/loginVig', (req, res) => {
         res.render('loginVig');
@@ -138,7 +144,7 @@ app.post('/auth', async (req, res) => {
                     alertIcon: 'success',
                     showConfirmButton: false,
                     timer:1500,
-                    ruta:'/dashboardCx'
+                    ruta:'dashboardCx'
                 });
             }
         })

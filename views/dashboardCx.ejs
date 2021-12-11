@@ -4,11 +4,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/cx.css">
+    <title>Dashboard CX</title>
 </head>
 <body>
-    
-    <button onclick="click" id="btn1">Tarea1</button>
-    <button id="btn2">Taea2</button>
+    <!-- Sidebar -->
+    <div class="container_list">
+        <a href="/">
+            <img class="logo-drassager" src="resources/assets/assests_global/drassager-blanco.png" alt=""  >
+        </a>
+        <ul class"list_opt">
+            <li> <img src="resources/assets/portales/portal-cx/assets/elementos.svg" alt="img"> <a href="#dashboard">Dashboard</a> </li>
+            <li> <img src="resources/assets/portales/portal-cx/assets/cirugia.svg" alt="img"> <a href="#cirugia">Cirugia</a> </li>  </li>
+            <li> <img src="resources/assets/portales/portal-cx/assets/calendario.svg" alt="img"> <a href="#calendario">Calendario</a>  </li>
+            <li> <img src="resources/assets/portales/portal-cx/assets/material.svg" alt="img"> <a href="#material">Solicitar material</a>  </li>
+            <li> <img src="resources/assets/portales/portal-cx/assets/pacientesvg.svg" alt="img"> <a href="#pacientes">Pacientes</a>  </li>
+               <hr>
+            <li> <img src="resources/assets/portales/portal-cx/assets/ajuste.svg" alt="img"> <a href="">Ajustes</a>  </li>
+            <li> <img src="resources/assets/portales/portal-cx/assets/cerrar-sesión.svg" alt="img"> <a href="">Cerrar sesión</a>  </li>
+        </ul>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard">
+        <div class="modulo modulo_dashboard">
+            <div class="container_modulo">
+                <div class="container_modulo-1">
+                    <div class="modulo-left">
+                        <h2>Portal de programador CX</h2>
+                        <p>Jueves, 1 Abril 2021</p>
+                    </div>
+                    <div class="modulo-right">
+                        <span>
+                            <img src="resources/assets/portales/portal-cx/assets/search.svg" alt="lupa">
+                            <input type="text" placeholder="Buscar">
+                        </span>
+                    </div>
+                </div>
+                <div class="container_modulo-2">
+                    <div class="modulo-content-dashboard">
+                        <img src="resources/assets/portales/portal-cx/assets/img-name-cx.png" alt="central">
+                    </div>
+                </div>
+                <div class="container_modulo-3">
+                    <span class="contenedor-a">
+                        <a> <img src="resources/assets/portales/portal-cx/assets/search.svg" alt="img-cirugia">
+                            Cirugia
+                        </a>
+                    </span>
+                    <span class="contenedor-a">
+                        <a> <img src="" alt="img-calendario"> Calendario</a>
+                    </span>
+                    <span class="contenedor-a">
+                        <a> <img src="" alt="img-historial"> Historial quirurgico</a>
+                    </span>
+                    <span class="contenedor-a">
+                        <a> <img src="" alt="img-lista"> Lista de espera</a>
+                    </span>
+                </div>
+                <div class="container_modulo-4">
+                    <img src="resources/assets/portales/portal-cx/assets/img-table-cx.png" alt="tabla de cirugia">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Cirugia -->
+    <div id="cirugia">
+        <div class="modulo modulo_cirugia">
+            <div class="container_modulo">
+                    <h2>Detalles cirugia</h2>
+                <div class="modulo-content-cirugia">
+                    <button>Nueva cirugia</button>
+                    <button>Eliminar cirugia</button>
+                    <button>Buscar cirugia</button>
+                    <button>Ver cirugias</button>
+                    <button>Actualizar cirugia</button>
+                    <hr>
+                </div>
+                <div class="container-formulario">
+                    <div class="container-formulario-modulos">
+                        <div class="formulario-left">
+                            <div>
+                                ID paciente<input type="text">
+                            </div>
+                            <div>
+                                ID procedimiento<input type="text">
+                            </div>
+                            <div>
+                                Codigo historial<input type="text">
+                            </div>
+                            <div>
+                                Hora inicio/fin<input type="text">
+                            </div>
+                        </div>
+                        <div class="formulario-right">
+                            <div>
+                                Id cirugia<input type="text">
+                            </div>
+                            <div>
+                                ID personal salud<input type="text">
+                            </div>
+                            <div>
+                                Fecha de la cirugia<input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Observaciones <input class="coments-cirugia" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Calendario -->
+    <div id="calendario">
+        <div class="modulo modulo_calendario">
+            <div class="container_modulo">
+                <div class="modulo-content">
+                    <img src="resources/assets/portales/portal-cx/assets/img-head-calendario.png" alt="central">
+                </div>
+                <div class="container_calendario-2">
+                    <div>
+                        <span>
+                            <img src="resources/assets/portales/portal-cx/assets/search.svg" alt="lupa">
+                            <input type="text" placeholder="Buscar">
+                        </span>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="" alt="imagen actualizar">
+                        </button>
+                        <input type="text" placeholder="Filtrar">
+                    </div>
+                </div>
+                <div class="container_calendario-3">
+                    <img src="resources/assets/portales/portal-cx/assets/img-calendario-calendario.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solicitar material -->
+
+    <div id="material">
+        <div class="modulo modulo_material">
+            <div class="container_modulo">
+                <h2>Solicitar Material</h2>
+                <div class="modulo-content-cirugia">
+                    <button>Solicitud</button>
+                    <button>Cancelar solicitud</button>
+                    <button>Historial de solicitudes</button>
+                    <hr>
+                </div>
+                <div class="modulo-content">
+                    <div class="container-formulario-modulos">
+                        <div class="formulario-left">
+                            <div>
+                                ID solicitud<input type="text">
+                            </div>
+                            <div>
+                                Solicitante<input type="text">
+                            </div>
+                            <div>
+                                Id Procedimiento<input type="text">
+                            </div>
+                            <div>
+                                ID paquete<input type="text">
+                            </div>
+                        </div>
+                        <div class="formulario-right">
+                            <div>
+                                Cantidad<input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Observaciones <input class="coments-cirugia" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pacientes -->
+    <div id="pacientes">
+        <div class="modulo modulo_pacientes">
+            <div class="container_modulo">
+                <h2>Detalles pacientes</h2>
+                <div class="modulo-content-cirugia">
+                    <button>Nuevo paciente</button>
+                    <button>Eliminar paciente</button>
+                    <button>Buscar paciente</button>
+                    <button>Actualizar paciente</button>
+                    <hr>
+                </div>
+                <div class="modulo-content">
+                    <div class="container-formulario-modulos">
+                        <div class="formulario-left">
+                            <div>
+                                ID paciente<input type="text">
+                            </div>
+                            <div>
+                                Nombres<input type="text">
+                            </div>
+                            <div>
+                                Teléfono paciente<input type="text">
+                            </div>
+                            <div>
+                                Tipo de documento <select>
+                                    <option value="CC">CC</option>
+                                    <option value="CE">CE</option>
+                                    <option value="TI">TI</option>
+                                    <option value="PASAPORTE">PASAPORTE</option>
+                                </select>
+                            </div>
+                            <div>
+                                Acompañante<input type="text">
+                            </div>
+                        </div>
+                        <div class="formulario-right">
+                            <div>
+                                Codigo historial<input type="text">
+                            </div>
+                            <div>
+                                Apellidos<input type="text">
+                            </div>
+                            <div>
+                                Numero de documento<input type="text">
+                            </div>
+                            <div>
+                                Telefono acompañante<input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Antecedentes médicos <input class="coments-cirugia" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
 </body>
 </html>

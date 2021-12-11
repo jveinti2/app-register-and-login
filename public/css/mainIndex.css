@@ -48,16 +48,17 @@
   }
   
   main h2 {
-    margin-left: 380px;
+    /* margin-left: 380px; */
     margin-bottom: 25px;
     font-size: 30px;
     font-weight: 500;
   
   }
   
-  main div {
+  .container-textbtn {
     align-self: center;
     justify-self: center;
+    text-align: center;
   }
   
   main div a {
