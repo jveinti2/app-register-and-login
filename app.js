@@ -1,4 +1,5 @@
 
+const port = process.env.PORT || 3000;
 //Configuración de la app
 const express = require('express');
 const app = express();
@@ -188,6 +189,6 @@ app.post('/auth2', async (req, res) => {
 
 //LISTEN PORT APP
     //listen
-app.listen(3000, (req, res) => {
-    console.log('Servidor ejecutandose in http://localhost:3000');
+app.listen(port, (req, res) => {
+    console.log('Servidor ejecutandose in', port);
 });
