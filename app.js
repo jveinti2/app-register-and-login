@@ -77,7 +77,7 @@ app.post('/register', async (req, res) => {
     const rol = req.body.rol;
     const pass = req.body.pass;
     let passwordHaash = await bcryptjs.hash(pass, 8);
-    connection.query('INSERT INTO user SET ?', {user:user, name:name, rol:rol, pass:passwordHaash}, async (error, results) => {
+    connection.query('INSERT INTO userCx SET ?', {user:user, name:name, rol:rol, pass:passwordHaash}, async (error, results) => {
         if(error){
             console.log(error);
         }else{
